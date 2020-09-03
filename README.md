@@ -7,7 +7,7 @@
 [](./assets/images/demo.png)
     
 ## Description
-** MySQL Team Bank ** is a command-line application that allows the user to add and view departments, roles and employees as well as update employee roles. 
+**MySQL Team Bank** is a command-line application that allows the user to add and view departments, roles and employees as well as update employee roles. 
 
 ---
 
