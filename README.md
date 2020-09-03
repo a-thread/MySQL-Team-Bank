@@ -2,8 +2,6 @@
 # MySQL Team Bank 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-[MySQL Team Bank](link to come!)
-
 [](./assets/images/demo.png)
     
 ## Description
