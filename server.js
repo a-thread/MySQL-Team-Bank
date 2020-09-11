@@ -9,8 +9,8 @@ function mainMenu() {
     message: "What would you like to do?",
     choices: [
       "View All Employees",
-      "View All Employees by Department",
-      "View All Employees by Manager",
+      "View All Departments",
+      "View All Managers",
       "Add Employee",
       "Remove Employee",
       "Update Employee",
@@ -20,15 +20,44 @@ function mainMenu() {
   }).then(function (res) {
     switch (res.startQ) {
       case "View All Employees":
-        viewEmp();
-        break
+        viewAll();
+        break;
+      case "View All Departments":
+        viewDept();
+        break;
+      case "View All Managers":
+        viewMang();
+        break;
+      case "Add Employee":
+        addEmp();
+        break;
+      case "Remove Employee":
+        removeEmp();
+        break;
+      case "Update Employee":
+        updateEmp();
+        break;
+      case "Update Employee Role":
+        empRole();
+        break;
+      case "Update Employee Manager":
+        empMang();
+        break;
     }
   })
 };
 
-function viewEmp() {
-  db.findAllEmp().then((res) => {
-    console.log("Here are your current Employees:")
+function viewAll() {
+  db.findAll().then((res) => {
+    console.log("Current Employees:")
+    printTable(res);
+  })
+  mainMenu();
+};
+
+function viewDept() {
+  db.findDept().then((res) => {
+    console.log("Current Departments:")
     printTable(res);
   })
   mainMenu();
