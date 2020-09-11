@@ -1,7 +1,7 @@
 var mysql = require("mysql");
 var util = require("util");
 
-// create the connection information for the sql database
+// create the connection information
 var connection = mysql.createConnection({
   host: "localhost",
 
@@ -13,6 +13,8 @@ var connection = mysql.createConnection({
 
   // Your password
   password: "root",
+
+  // database
   database: "employee_db"
 });
 
@@ -24,10 +26,9 @@ connection.connect(function (err) {
     return;
   }
   console.log("Connected as ID Thread: " + connection.threadId)
-  // run the start function after the connection is made to prompt the user
  
 });
 
 connection.query = util.promisify(connection.query);
 
-module.exports = connection
+module.exports = connection;
