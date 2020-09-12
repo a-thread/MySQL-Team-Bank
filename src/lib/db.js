@@ -1,4 +1,4 @@
-const connection = require("../connection/connection");
+const connection = require("../config/connection");
 
 class Db {
     constructor() {
@@ -43,7 +43,7 @@ class Db {
         return this.connection.query('INSERT INTO roles SET ?', { title: res.name, salary: res.salary });
     }
 
-    delete(table, id) {
+    deleteFunc(table, id) {
         return this.connection.query(`DELETE FROM ?? WHERE id = ?`, [ table, id ]);
     }
 }
