@@ -24,11 +24,9 @@ connection.connect(function (err) {
   if (err) {
     console.log(err);
     return;
-  }
-  console.log("Connected as ID Thread: " + connection.threadId)
- 
+  } 
 });
 
-connection.query = util.promisify(connection.query);
+connection.query = util.promisify(connection.query).bind(connection);
 
 module.exports = connection;
