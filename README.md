@@ -43,7 +43,7 @@ Run ```npm start``` in your terminal to start the program. Then, select from the
 
 ### Technologies Used
 - Node.js
-- Inquirer
+- InquirerJs
 - Console-Table-Printer
 - MySQL
 - HeidiSQL

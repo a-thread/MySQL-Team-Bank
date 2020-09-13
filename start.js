@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const { viewAll, viewDept, viewRoles, viewEmpMang, viewBudget } = require("./lib/viewFuncs");
 const { addRole, addEmp, addDept } = require("./lib/addFuncs");
-const { removeEmp, removeRole } = require("./lib/deleteFuncs");
+const { removeEmp, removeRole, removeDept } = require("./lib/deleteFuncs");
 const { updateRole, updateMang } = require("./lib/updateFuncs");
 
 // main menu function
@@ -20,6 +20,7 @@ function mainMenu() {
             "Add Role",
             "Add Department",
             "Remove Employee",
+            "Remove Department",
             "Remove Role",
             "Update Employee Role",
             "Update Employee Manager",
@@ -49,6 +50,9 @@ function mainMenu() {
                 break;
             case "Remove Employee":
                 removeEmp();
+                break;
+            case "Remove Department":
+                removeDept();
                 break;
             case "Remove Role":
                 removeRole();
