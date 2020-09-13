@@ -5,7 +5,9 @@ const { addRole, addEmp, addDept } = require("./lib/addFuncs");
 const { removeEmp, removeDept, removeRole } = require("./lib/deleteFuncs");
 const { updateRole, updateMang } = require("./lib/updateFuncs");
 
+// main menu function
 function mainMenu() {
+    // main menu prompts
     inquirer.prompt({
         type: "list",
         name: "startQ",
@@ -22,9 +24,9 @@ function mainMenu() {
             "Remove Department",
             "Update Employee Role",
             "Update Employee Manager",
-            "Exit",
             "View Employees by Manager",
             "View the total budget of a department",
+            "Exit",
         ]
     }).then(function (res) {
         switch (res.startQ) {
@@ -61,8 +63,6 @@ function mainMenu() {
             case "Update Employee Manager":
                 updateMang();
                 break;
-            case "Exit":
-                console.log('Goodbye!');
                 break;
             case "View Employees by Manager":
                 viewEmpMang();
@@ -70,17 +70,27 @@ function mainMenu() {
             case "View the total budget of a department":
                 viewBudget();
                 break;
+            case "Exit":
+                console.log('Goodbye!');
         }
     })
 };
+
 
 function welcome() {
     console.log(`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
     console.log(`  Welcome to Aiden's MySql Team Bank!`);
     console.log(`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
-    console.log(`           home for mutants`);
+    console.log(`          home for mutants`);
+    console.log(`           `);
 };
 
-welcome();
+function init() {
+    welcome();
+    mainMenu();
+}
+
+init();
+
 
 module.exports = { mainMenu };
