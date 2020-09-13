@@ -2,7 +2,7 @@
 # MySQL Team Bank 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-![Image of Terminal Start Screen](./images/start-screen.png)
+![Image of Terminal Start Screen](./media/start-screen.png)
     
 ## Description
 **MySQL Team Bank** is a command-line application that allows the user to add, view & remove departments, roles and employees as well as update employee roles and managers. The user is also able to view employees by manager and view the total budget of each department.  
@@ -38,12 +38,13 @@ Run ```npm start``` in your terminal to start the program. Then, select from the
 
 
 ### Demo 
-![Demo of App in use](./images/demo.gif)
->#### [***Link to full demo.***](https://youtu.be/iO6c0jbuMZc)
+![Demo of App in use](./media/demo.gif)
+[***Watch full demo here!***](https://youtu.be/iO6c0jbuMZc)
 
 
 ### Technologies Used
 - Node.js
+- npm
 - InquirerJs
 - Console-Table-Printer
 - MySQL
