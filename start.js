@@ -21,7 +21,6 @@ function mainMenu() {
             "Add Department",
             "Remove Employee",
             "Remove Role",
-            "Remove Department",
             "Update Employee Role",
             "Update Employee Manager",
             "View Employees by Manager",
@@ -53,9 +52,6 @@ function mainMenu() {
                 break;
             case "Remove Role":
                 removeRole();
-                break;
-            case "Remove Department":
-                removeDept();
                 break;
             case "Update Employee Role":
                 updateRole();
