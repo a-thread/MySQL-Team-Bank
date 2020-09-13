@@ -2,10 +2,10 @@
 # MySQL Team Bank 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-[](./assets/images/demo.png)
+![Image of Terminal Start Screen](./images/start-screen.png)
     
 ## Description
-**MySQL Team Bank** is a command-line application that allows the user to add and view departments, roles and employees as well as update employee roles. 
+**MySQL Team Bank** is a command-line application that allows the user to add and view departments, roles and employees as well as update & remove employee roles and employees. The user is also able to view employees by manager and view the total budget of each department.  
 
 ---
 
@@ -30,17 +30,23 @@ So that I can organize and plan my business
 ```
 
 ### Installation
+Run ```npm install``` in your terminal
 
 
 ### Usage
-Run ```npm start``` in your terminal to build your own employee database!
+Run ```npm start``` in your terminal to start the program. Then, select from the menu to begin building your team! See [Demo](#demo) for more info.
 
 
 ### Demo 
-*Demo to come!*
+![Demo of App in use](./images/demo.gif)
+[** *Link to full demo.* **](https://youtu.be/zi5_UMX_N_A)
 
 ### Technologies Used
-- Technologies to be filled in later.
+- Node.js
+- Inquirer
+- Console-Table-Printer
+- MySQL
+- HeidiSQL
 
 #### License
 This project is licensed under MIT. 
