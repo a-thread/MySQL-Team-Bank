@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const { viewAll, viewDept, viewRoles, viewEmpMang, viewBudget } = require("./lib/viewFuncs");
 const { addRole, addEmp, addDept } = require("./lib/addFuncs");
-const { removeEmp, removeDept, removeRole } = require("./lib/deleteFuncs");
+const { removeEmp, removeRole } = require("./lib/deleteFuncs");
 const { updateRole, updateMang } = require("./lib/updateFuncs");
 
 // main menu function
@@ -78,11 +78,14 @@ function mainMenu() {
 
 
 function welcome() {
-    console.log(`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
-    console.log(`  Welcome to Aiden's MySql Team Bank!`);
-    console.log(`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
-    console.log(`          home for mutants`);
-    console.log(`           `);
+    console.log(` xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
+    console.log(` xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
+    console.log(`            `);
+    console.log(`   Welcome to Aiden's MySql Team Bank`);
+    console.log(`            `);
+    console.log(` xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
+    console.log(` xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
+    console.log(`            `);
 };
 
 function init() {
