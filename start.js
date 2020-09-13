@@ -1,9 +1,9 @@
+// dependencies
 const inquirer = require("inquirer");
 const { viewAll, viewDept, viewRoles } = require("./lib/viewFuncs");
 const { addRole, addEmp, addDept } = require("./lib/addFuncs");
 const { removeEmp, removeDept, removeRole } = require("./lib/deleteFuncs");
-const { updateRole } = require("./lib/updateFuncs");
-const { connection } = require("./config/connection");
+const { updateRole, updateMang } = require("./lib/updateFuncs");
 
 function mainMenu() {
     inquirer.prompt({
@@ -21,6 +21,7 @@ function mainMenu() {
             "Remove Role",
             "Remove Department",
             "Update Employee Role",
+            "Update Employee Manager",
             "Exit",
         ]
     }).then(function (res) {
@@ -54,6 +55,9 @@ function mainMenu() {
                 break;
             case "Update Employee Role":
                 updateRole();
+                break;
+            case "Update Employee Manager":
+                updateMang();
                 break;
             case "Exit":
                 console.log('Goodbye!');
