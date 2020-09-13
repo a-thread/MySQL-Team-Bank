@@ -39,7 +39,8 @@ Run ```npm start``` in your terminal to start the program. Then, select from the
 
 ### Demo 
 ![Demo of App in use](./images/demo.gif)
-[** *Link to full demo.* **](https://youtu.be/zi5_UMX_N_A)
+>#### [***Link to full demo.***](https://youtu.be/iO6c0jbuMZc)
+
 
 ### Technologies Used
 - Node.js
