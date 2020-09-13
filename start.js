@@ -1,6 +1,6 @@
 // dependencies
 const inquirer = require("inquirer");
-const { viewAll, viewDept, viewRoles } = require("./lib/viewFuncs");
+const { viewAll, viewDept, viewRoles, viewEmpMang } = require("./lib/viewFuncs");
 const { addRole, addEmp, addDept } = require("./lib/addFuncs");
 const { removeEmp, removeDept, removeRole } = require("./lib/deleteFuncs");
 const { updateRole, updateMang } = require("./lib/updateFuncs");
@@ -23,6 +23,7 @@ function mainMenu() {
             "Update Employee Role",
             "Update Employee Manager",
             "Exit",
+            "View Employees by Manager",
         ]
     }).then(function (res) {
         switch (res.startQ) {
@@ -61,6 +62,9 @@ function mainMenu() {
                 break;
             case "Exit":
                 console.log('Goodbye!');
+                break;
+            case "View Employees by Manager":
+                viewEmpMang();
                 break;
         }
     })
