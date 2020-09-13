@@ -1,6 +1,6 @@
 // dependencies
 const inquirer = require("inquirer");
-const { viewAll, viewDept, viewRoles, viewEmpMang } = require("./lib/viewFuncs");
+const { viewAll, viewDept, viewRoles, viewEmpMang, viewBudget } = require("./lib/viewFuncs");
 const { addRole, addEmp, addDept } = require("./lib/addFuncs");
 const { removeEmp, removeDept, removeRole } = require("./lib/deleteFuncs");
 const { updateRole, updateMang } = require("./lib/updateFuncs");
@@ -24,6 +24,7 @@ function mainMenu() {
             "Update Employee Manager",
             "Exit",
             "View Employees by Manager",
+            "View the total budget of a department",
         ]
     }).then(function (res) {
         switch (res.startQ) {
@@ -66,10 +67,20 @@ function mainMenu() {
             case "View Employees by Manager":
                 viewEmpMang();
                 break;
+            case "View the total budget of a department":
+                viewBudget();
+                break;
         }
     })
 };
 
-mainMenu();
+function welcome() {
+    console.log(`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
+    console.log(`  Welcome to Aiden's MySql Team Bank!`);
+    console.log(`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
+    console.log(`           home for mutants`);
+};
+
+welcome();
 
 module.exports = { mainMenu };
