@@ -5,7 +5,7 @@
 ![Image of Terminal Start Screen](./images/start-screen.png)
     
 ## Description
-**MySQL Team Bank** is a command-line application that allows the user to add and view departments, roles and employees as well as update & remove employee roles and employees. The user is also able to view employees by manager and view the total budget of each department.  
+**MySQL Team Bank** is a command-line application that allows the user to add, view & remove departments, roles and employees as well as update employee roles and managers. The user is also able to view employees by manager and view the total budget of each department.  
 
 ---
 
