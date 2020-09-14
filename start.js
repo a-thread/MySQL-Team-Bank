@@ -76,7 +76,7 @@ function mainMenu() {
     })
 };
 
-
+// Welcome Message
 function welcome() {
     console.log(` xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
     console.log(` xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`);
@@ -88,12 +88,16 @@ function welcome() {
     console.log(`            `);
 };
 
+// Start Program Function
 function init() {
+    // with welcome message
     welcome();
+    // then firing main menu
     mainMenu();
 }
 
+// Starting Program
 init();
 
-
+// Exporting mainMenu Function
 module.exports = { mainMenu };
