@@ -39,6 +39,7 @@ Run ```npm start``` in your terminal to start the program. Then, select from the
 
 ### Demo 
 ![Demo of App in use](./media/demo.gif)
+
 [***Watch full demo here!***](https://youtu.be/iO6c0jbuMZc)
 
 
