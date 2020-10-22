@@ -1,0 +1,30 @@
+{
+  "name": "mysql-team-bank",
+  "version": "1.0.0",
+  "description": "MySQL based team generator",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "console-table-printer": "^2.3.31",
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-thread/MySQL-Team-Bank.git"
+  },
+  "author": "a-thread",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-thread/MySQL-Team-Bank/issues"
+  },
+  "homepage": "https://github.com/a-thread/MySQL-Team-Bank#readme"
+}
